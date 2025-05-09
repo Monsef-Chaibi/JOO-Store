@@ -1,0 +1,148 @@
+@import "tailwindcss";
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@media (min-width: 768px) {
+    .active {
+      padding: 0.125rem;
+      border-bottom: 2px solid!important;
+    }
+  }
+.active {
+
+    border-color: #0E4429 !important;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* Centering the article in the slide */
+@media (max-width: 767px) {
+    .glide__slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .glide__slide article {
+      max-width: 90%;  /* Optional: controls article width */
+      margin: 0 auto;  /* Centers it horizontally */
+    }
+  }
+
+  #splide-best-sellers .splide__arrow {
+    display: none !important;
+  }
+
+  /* Show only on phones */
+  @media (max-width: 768px) {
+    #splide-best-sellers .splide__arrow {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  #splide-best-sellers .splide__arrow--next
+  {
+    right: -1.5rem !important;
+  }
+  #splide-best-sellers .splide__arrow--prev
+  {
+    left: -1.5rem !important;
+  }
+  #second-slider .splide__arrow--next
+  {
+    right: 0.2rem !important;
+  }
+  #second-slider .splide__arrow--prev
+  {
+    left: 0.2rem !important;
+  }
+
+  .splide__arrow {
+    background: none !important; /* t7ayad background */
+    border: none !important;     /* t7ayad border */
+    color: #000 !important;      /* color dyal arrow */
+    font-size: 24px !important;  /* kbar arrow */
+    box-shadow: none !important; /* t7ayad shadow */
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+  }
+
+  /* From Uiverse.io by kamehame-ha */
+.cards {
+    display: flex;
+    gap: 15px;
+  }
+
+  .cards .red {
+    background-color: #f43f5e;
+  }
+
+  .cards .blue {
+    background-color: black;
+  }
+
+  .cards .green {
+    background-color: #22c55e;
+  }
+
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+
+  .cards:has(.card:hover) > .card:not(:hover) {
+    filter: blur(4px);
+    transform: scale(0.9);
+    transition: 400ms;
+  }
+
+  .cards .card:hover {
+    transform: scale(1.1);
+    transition: 400ms;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+
