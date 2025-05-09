@@ -173,7 +173,7 @@
     </div>
     <div class="Product hidden md:block mt-10">
         <div class="flex  justify-center">
-            <div class="grid gap-3 mt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+            <div class="grid gap-3 mt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
                 <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
                     <div>
                         <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
@@ -310,76 +310,35 @@
     <div id="second-slider" class="splide mt-10 md:hidden">
         <div class="splide__track">
           <ul class="splide__list">
-            <li class="splide__slide  flex justify-center">
-                <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
+            @for ($i = 0; $i < 4; $i++)
+              <li class="splide__slide flex justify-center">
+                <a href="/Product-Details" class="max-w-sm w-75">
+                  <article class="bg-white shadow-lg overflow-hidden border-1 border-gray-300 text-left">
                     <div>
-                        <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
+                      <img class="object-cover !h-75 w-full" src="{{ asset('img/Product/product3.png') }}" alt="Converse sneakers" />
                     </div>
-                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">
-                        Type
-                    </h2>
+                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">Type</h2>
                     <div class="flex flex-col gap-1 mt-4 px-4">
-                    <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
-                    <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
-                    <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
+                      <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
+                      <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
+                      <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
                     </div>
-                </article>
-            </li>
-           <li class="splide__slide  flex justify-center">
-                <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
-                    <div>
-                        <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
-                    </div>
-                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">
-                        Type
-                    </h2>
-                    <div class="flex flex-col gap-1 mt-4 px-4">
-                    <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
-                    <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
-                    <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
-                    </div>
-                </article>
-            </li>
-           <li class="splide__slide  flex justify-center">
-                <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
-                    <div>
-                        <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
-                    </div>
-                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">
-                        Type
-                    </h2>
-                    <div class="flex flex-col gap-1 mt-4 px-4">
-                    <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
-                    <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
-                    <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
-                    </div>
-                </article>
-            </li>
-           <li class="splide__slide  flex justify-center">
-                <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
-                    <div>
-                        <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
-                    </div>
-                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">
-                        Type
-                    </h2>
-                    <div class="flex flex-col gap-1 mt-4 px-4">
-                    <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
-                    <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
-                    <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
-                    </div>
-                </article>
-            </li>
+                  </article>
+                </a>
+              </li>
+            @endfor
           </ul>
         </div>
       </div>
 
-
       <div class="m-10 flex justify-center">
-        <button class="flex items-center rounded-md border border-green-800 py-3 px-5 text-center text-sm transition-all shadow-sm hover:shadow-lg text-green-800 hover:text-white hover:bg-green-900 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-            Voir tous les produits    >
-        </button>
-    </div>
+        <a href="/Tenues-De-Match">
+          <button class="flex items-center rounded-md border border-green-800 py-3 px-5 text-center text-sm transition-all shadow-sm hover:shadow-lg text-green-800 hover:text-white hover:bg-green-900 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+            Voir tous les produits >
+          </button>
+        </a>
+      </div>
+
 
 
       <div class="banner flex flex-col gap-y-4 md:flex-row md:gap-3">
