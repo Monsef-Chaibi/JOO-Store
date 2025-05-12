@@ -174,135 +174,21 @@
     <div class="Product hidden md:block mt-10">
         <div class="flex  justify-center">
             <div class="grid gap-3 mt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
-                <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
-                    <div>
-                        <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
-                    </div>
-                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">
-                        Type
-                    </h2>
-                    <div class="flex flex-col gap-1 mt-4 px-4">
-                    <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
-                    <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
-                    <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
-                    </div>
-                </article>
-                <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
-                    <div>
-                        <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
-                    </div>
-                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">
-                        Type
-                    </h2>
-                    <div class="flex flex-col gap-1 mt-4 px-4">
-                    <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
-                    <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
-                    <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
-                    </div>
-                </article>
-                <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
-                    <div>
-                        <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
-                    </div>
-                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">
-                        Type
-                    </h2>
-                    <div class="flex flex-col gap-1 mt-4 px-4">
-                    <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
-                    <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
-                    <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
-                    </div>
-                </article>
-                <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
-                    <div>
-                        <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
-                    </div>
-                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">
-                        Type
-                    </h2>
-                    <div class="flex flex-col gap-1 mt-4 px-4">
-                    <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
-                    <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
-                    <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
-                    </div>
-                </article> <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
-                    <div>
-                        <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
-                    </div>
-                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">
-                        Type
-                    </h2>
-                    <div class="flex flex-col gap-1 mt-4 px-4">
-                    <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
-                    <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
-                    <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
-                    </div>
-                </article>
-                <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
-                    <div>
-                        <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
-                    </div>
-                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">
-                        Type
-                    </h2>
-                    <div class="flex flex-col gap-1 mt-4 px-4">
-                    <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
-                    <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
-                    <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
-                    </div>
-                </article>
-                <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
-                    <div>
-                        <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
-                    </div>
-                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">
-                        Type
-                    </h2>
-                    <div class="flex flex-col gap-1 mt-4 px-4">
-                    <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
-                    <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
-                    <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
-                    </div>
-                </article>
-                <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
-                    <div>
-                        <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
-                    </div>
-                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">
-                        Type
-                    </h2>
-                    <div class="flex flex-col gap-1 mt-4 px-4">
-                    <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
-                    <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
-                    <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
-                    </div>
-                </article>
-                <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
-                    <div>
-                        <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
-                    </div>
-                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">
-                        Type
-                    </h2>
-                    <div class="flex flex-col gap-1 mt-4 px-4">
-                    <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
-                    <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
-                    <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
-                    </div>
-                </article>
-                <article class="max-w-sm w-75 bg-white  shadow-lg overflow-hidden border-1 border-gray-300 text-left">
-                    <div>
-                        <img class="object-cover !h-75 w-full" src="{{asset("img/Product/product3.png")}}" alt="Converse sneakers" />
-                    </div>
-                    <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">
-                        Type
-                    </h2>
-                    <div class="flex flex-col gap-1 mt-4 px-4">
-                    <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
-                    <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
-                    <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
-                    </div>
-                </article>
+                @for ($i = 0; $i < 12; $i++)
+                  <a href="/Product-Details" class="max-w-sm w-75">
+                    <article class="bg-white shadow-lg overflow-hidden border-1 border-gray-300 text-left">
+                      <div>
+                        <img class="object-cover !h-75 w-full" src="{{ asset('img/Product/product3.png') }}" alt="Converse sneakers" />
+                      </div>
+                      <h2 class="flex flex-col gap-1 mt-4 px-4 text-gray-400">Type</h2>
+                      <div class="flex flex-col gap-1 mt-4 px-4">
+                        <h2 class="text-lg font-semibold text-black-800">Converse Sneakers</h2>
+                        <span class="font-normal text-black-800">High Top (Lemon Yellow)</span>
+                        <span class="font-semibold text-black-800 my-2 text-green-900">120 DH</span>
+                      </div>
+                    </article>
+                  </a>
+              @endfor
             </div>
         </div>
     </div>

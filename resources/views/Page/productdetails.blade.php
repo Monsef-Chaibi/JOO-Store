@@ -28,6 +28,7 @@
 </head>
 <body>
 
+
     @include('layouts.header')
 
  <section class="py-24">
@@ -164,16 +165,19 @@
                                     </svg>
                                 </button>
                             </div>
-                            <button
+                            <form id="addToCartForm">
+                                @csrf
+                                <button type=""
                                 class="group py-3 px-5 rounded-full bg-green-50 text-green-600 font-semibold text-lg w-full flex items-center justify-center gap-2 shadow-sm shadow-transparent transition-all duration-500 hover:shadow-green-300 hover:bg-green-100">
                                 <svg class="stroke-green-600 transition-all duration-500 group-hover:stroke-green-600"
-                                    width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M10.7394 17.875C10.7394 18.6344 10.1062 19.25 9.32511 19.25C8.54402 19.25 7.91083 18.6344 7.91083 17.875M16.3965 17.875C16.3965 18.6344 15.7633 19.25 14.9823 19.25C14.2012 19.25 13.568 18.6344 13.568 17.875M4.1394 5.5L5.46568 12.5908C5.73339 14.0221 5.86724 14.7377 6.37649 15.1605C6.88573 15.5833 7.61377 15.5833 9.06984 15.5833H15.2379C16.6941 15.5833 17.4222 15.5833 17.9314 15.1605C18.4407 14.7376 18.5745 14.0219 18.8421 12.5906L19.3564 9.84059C19.7324 7.82973 19.9203 6.8243 19.3705 6.16215C18.8207 5.5 17.7979 5.5 15.7522 5.5H4.1394ZM4.1394 5.5L3.66797 2.75"
-                                        stroke="" stroke-width="1.6" stroke-linecap="round" />
-                                </svg>
-                                Add to cart</button>
+                                width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                d="M10.7394 17.875C10.7394 18.6344 10.1062 19.25 9.32511 19.25C8.54402 19.25 7.91083 18.6344 7.91083 17.875M16.3965 17.875C16.3965 18.6344 15.7633 19.25 14.9823 19.25C14.2012 19.25 13.568 18.6344 13.568 17.875M4.1394 5.5L5.46568 12.5908C5.73339 14.0221 5.86724 14.7377 6.37649 15.1605C6.88573 15.5833 7.61377 15.5833 9.06984 15.5833H15.2379C16.6941 15.5833 17.4222 15.5833 17.9314 15.1605C18.4407 14.7376 18.5745 14.0219 18.8421 12.5906L19.3564 9.84059C19.7324 7.82973 19.9203 6.8243 19.3705 6.16215C18.8207 5.5 17.7979 5.5 15.7522 5.5H4.1394ZM4.1394 5.5L3.66797 2.75"
+                                stroke="" stroke-width="1.6" stroke-linecap="round" />
+                            </svg>
+                            Add to cart</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -197,20 +201,44 @@
         </p>
     </div>
 
-
     <script>
-        var swiper_thumbs = new Swiper(".nav-for-slider", {
-        loop: true,
-        spaceBetween: 30,
-        slidesPerView: 5,
-        });
-        var swiper = new Swiper(".main-slide-carousel", {
-        slidesPerView: 1,
-        thumbs: {
-            swiper: swiper_thumbs,
-        },
+        document.addEventListener('DOMContentLoaded', () => {
+
+            var swiper_thumbs = new Swiper(".nav-for-slider", {
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 5,
+            });
+            var swiper = new Swiper(".main-slide-carousel", {
+            slidesPerView: 1,
+            thumbs: {
+                swiper: swiper_thumbs,
+            },
+            });
+
         });
     </script>
+    <script>
+        // JavaScript to show SweetAlert2 Toast notification
+        document.getElementById('addToCartForm').addEventListener('submit', function(e) {
+            e.preventDefault();  // Prevent form submission (no page refresh)
+
+            // Show SweetAlert2 Toast notification
+            Swal.fire({
+                position: 'top-end',  // Toast position (top-right)
+                icon: 'success',  // Notification type (success, error, etc.)
+                title: 'تمت الاضافة بنجاح',  // The message
+                showConfirmButton: false,  // Hide the confirm button
+                timer: 1500,  // The toast will disappear after 1.5 seconds
+                toast: true,  // Make it a toast (pop-up)
+                background: '#28a745',  // Customize background color (green)
+                color: '#fff',  // Customize text color
+                iconColor: '#fff'  // Customize icon color
+                
+            });
+        });
+    </script>
+
 
     @include('layouts.footer')
 
