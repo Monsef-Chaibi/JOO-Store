@@ -154,11 +154,9 @@
 
 
 
-
     <div>
-        <img src="{{asset("img/banner/banner1.png")}}" class="w-full h-35 md:h-120" alt="">
+        <img src="{{asset("img/banner/banner1.png")}}" class="w-full h-35 md:h-100 my-20" alt="">
     </div>
-
 
 
 
